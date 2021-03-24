@@ -62,6 +62,7 @@ html,body{
     border:none;
     background-color: rgb(30, 30, 30);
     color:rgb(155, 155, 155);
+    transition-duration: 0.2s;
 }
 .subcategory:hover{
     color:white;
@@ -71,7 +72,7 @@ html,body{
 }
 
 .sec2{
-    background-color: blue;
+    background-color: rgb(35, 35, 35);
     min-width: 550px;
     max-width: 550px;
     display:flex;
@@ -79,15 +80,46 @@ html,body{
     align-items: center;
 }
 
-.search{
+#search{
     margin-top:30px;
     margin-bottom: 50px;
+    width:85%;
+    border-radius: 8px;
 }
 .email{
-    background-color:yellow;
-    width:75%;
-    border-style:solid;
-    border-color:black;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    background-color:rgb(35,35,35);
+    width:90%;
+    height:100px;
+    margin-bottom: 5px;
+    padding:15px;
+    border-radius: 8px;
+    transition-duration: 0.2s;
+}
+
+.email:hover{
+    background-color: rgb(122, 122, 122);
+}
+
+.email-top{
+    display:flex;
+    justify-content: space-between;
+}
+
+.email-title{
+    font-size:25px;
+}
+
+.email-date{
+    color:rgb(150, 150, 150);
+}
+.email-content{
+    white-space: nowrap;
+    color:rgb(150, 150, 150);
+    text-overflow: ellipsis;
+    overflow:hidden;
 }
 
 .sec3{
