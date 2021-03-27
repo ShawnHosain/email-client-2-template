@@ -31,13 +31,29 @@
                 </div>
             </div>
             <div class="col sec2">
-                <input id="search" type="text" placeholder="Search For Emails">
+                <div class="searchbar">
+                    <button id = "searchbutton" title="Search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg></button>
+                    <input id="search" type="text" placeholder="Search For Emails">
+                </div>
                 <div class="email">
                     <div class="email-top">
                         <div class="email-title">Tyler O.</div>
                         <div class="email-date">1/1/1</div>
                     </div>
-                    <div class="email-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    <div class="email-content">
+                        Are we still friends?
+                        Can we be friends?
+                        Are we still friends?
+                        I've got to Know
+                        See each other (last spring)
+                        Shake your hand, say hi
+                        Long ago, long ago, long ago (spring)
+                        I can't stop you, I can rock, too
+                        I've been back there and I can, I got to
+                        But I've got to know
+                    </div>
                 </div>
                 <div class="email">
                     <div class="email-top">
@@ -60,15 +76,53 @@
                         <div class="authors-To">To: Shawn@bvt.com</div>
                         <div class="authors-From">From:TylerTC@igor.com</div>
                     </div>
-                    <div class="fullemail-title">
-                        Tyler O.
+                    <div class="fullemail-top">
+                        <div class="fullemail-title">
+                            Tyler O.
+                        </div>
+                        <div class="fullemail-links">
+                            <button class="link" title="Move to Trash">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-trash" viewBox="0 0 16 16">
+                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                                  </svg>
+                            </button>
+                            <button class="link2" title ="Reply">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-reply" viewBox="0 0 16 16" id="replylink">
+                                    <path d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"/>
+                                  </svg>    
+                            </button>
+                            <button class="link2" title= "Flag">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag" viewBox="0 0 16 16">
+                                    <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"/>
+                                  </svg> 
+                            </button>        
+                        </div>
                     </div>
                     <div class="fullemail-content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Are we still friends?
+                        Can we be friends?
+                        Are we still friends?
+                        I've got to Know <br>
+                        See each other (last spring)
+                        Shake your hand, say hi<br>
+                        Long ago, long ago, long ago (spring)
+                        <br><br>
+                        I can't stop you, I can rock, too<br>
+                        I've been back there and I can, I got to<br>
+                        But I've got to know...
                     </div>
                     <div class="fullemail-replybox">
-                        <textarea id="replyinput"></textarea>
-                        <button id="reply">Reply</button>
+                        <textarea id="replyinput" placeholder="Write a reply..."></textarea>
+                        <div class="input-clickables">
+                            <button id ="file-img" title="Attach a file">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-file-earmark-fill file" viewBox="0 0 16 16" ">
+                                    <path d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3z"/>
+                                  </svg>
+                            </button>
+                            <button id="reply">Reply</button>
+                        </div>
+                        
                     </div>
                     
                 </div>
